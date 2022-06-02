@@ -1,11 +1,17 @@
-.App {
-  text-align: center;
+.app {
+  display: grid;
+  grid-template-columns: 1fr 7fr;
+  background: red;
+  .navMenu  {
+    background: black;
+  }
+
+  .content  {
+    display: grid;
+    grid-template-rows: 1fr 41.65625fr;
+  }
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
