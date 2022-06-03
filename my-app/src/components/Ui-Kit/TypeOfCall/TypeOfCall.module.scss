@@ -1,17 +1,15 @@
-@import "../../../../src/styles//main.scss";
+@import "src/styles/main";
 
 .incoming {
-  stroke: red;
-  stroke: $green;
-  fill: $accent;
+  
 
 }
 
 .outcoming  {
-  fill: $green;
+  
 }
 
 .imperfect  {
-  stroke: $green;
-  stroke: green;
+  fill: $ui-red;
+  //stroke: red;
 }
