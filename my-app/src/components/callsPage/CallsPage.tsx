@@ -1,4 +1,5 @@
 import React from 'react'; // we need this to make JSX compile
+import { TypeOfCall } from '../Ui-Kit/TypeOfCall/TypeOfCall';
 
 
 export interface CallsPagePropsType {
@@ -8,7 +9,7 @@ export interface CallsPagePropsType {
 const CallsPage: React.FC<CallsPagePropsType> = () => {
   return (
     <div>
-      CallsPage
+      <TypeOfCall isIncoming={true} isPerfect={true}/>
     </div>
   )
 } 
