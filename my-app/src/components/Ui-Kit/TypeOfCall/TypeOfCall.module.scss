@@ -1,0 +1,16 @@
+@import "src"
+
+.incoming {
+  stroke: red;
+  stroke: $green;
+  fill: $accent;
+
+}
+
+.outcoming  {
+  fill: $green;
+}
+
+.imperfect  {
+  stroke: $green;
+}

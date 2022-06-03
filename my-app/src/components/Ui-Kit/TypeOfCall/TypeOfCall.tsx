@@ -1,20 +1,24 @@
-import React from 'react'; // we need this to make JSX compile
+import React from 'react';
 import { ReactComponent as IncomingCall } from "../../../assets/Ui-Kit/TypeOfCall/incoming.svg";
-import { ReactComponent as OutComingCall } from "../../../assets/Ui-Kit/TypeOfCall/outcoming.svg";
+import { ReactComponent as OutcomingCall } from "../../../assets/Ui-Kit/TypeOfCall/outcoming.svg";
+import styles from "./TypeOfCall.module.scss";
 
 export interface ITypeOfCall {
-  isIncoming: boolean
+  isIncoming: boolean,
   isPerfect: boolean
-}
+};
 
-const TypeOfCall: React.FC<ITypeOfCall> = (isIncoming, isPerfect) => {
-  return (
-    <div>
-      <IncomingCall />
-      <OutComingCall />
-      <IncomingCall fill='red'/>
-    </div>
-  )
+const TypeOfCall: React.FC<ITypeOfCall> = ({ isIncoming, isPerfect }) => {
+  if (isIncoming == true) {
+    return (
+      <IncomingCall className={isPerfect ? styles.incoming: styles.imperfect}/>
+      )
+  } else {
+    return (
+      <OutcomingCall className={isPerfect ? styles.outcoming : styles.imperfect}/>
+    )
+  }
+  
 } 
 
 export {TypeOfCall}

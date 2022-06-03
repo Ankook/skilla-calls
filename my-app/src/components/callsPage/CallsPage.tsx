@@ -9,7 +9,10 @@ export interface CallsPagePropsType {
 const CallsPage: React.FC<CallsPagePropsType> = () => {
   return (
     <div>
-      <TypeOfCall isIncoming={true} isPerfect={true}/>
+      <TypeOfCall isIncoming={true} isPerfect={true} />
+      <TypeOfCall isIncoming={true} isPerfect={false} />
+      <TypeOfCall isIncoming={false} isPerfect={true} />
+      <TypeOfCall isIncoming={false} isPerfect={false}/>
     </div>
   )
 } 
