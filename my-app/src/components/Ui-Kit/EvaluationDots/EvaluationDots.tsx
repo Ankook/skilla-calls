@@ -8,19 +8,22 @@ export interface IEvaluationDots {
 
 const EvaluationDots: React.FC<IEvaluationDots> = ({ evaluationStatus }) => {
   return (
-      <div className={styles.typeOfCall}>
+      <div className={styles.evaluationDots}>
         {evaluationStatus === "excellent"
-        ? <> 
+        ? <div className={styles.excellentContainer}> 
           <Ellipse />
           <Ellipse />
           <Ellipse />
-          </>
+          </div>
         : evaluationStatus === "good"
-        ? <>
+        ? <div className={styles.goodContainer}>
             <Ellipse />
             <Ellipse />
-          </>
-        : <Ellipse />
+          </div>
+          : <div className={styles.badContainer}>
+            <Ellipse />
+          </div>
+          
           }
       </div>
       )

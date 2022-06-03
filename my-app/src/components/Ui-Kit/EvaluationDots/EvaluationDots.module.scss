@@ -1,1 +1,21 @@
 @import "src/styles/main";
+
+.evaluationDots {
+  width: 28px;
+  height: 8px;
+  display: flex;
+  justify-content: flex-start;
+  gap: 2px;
+
+  .excellentContainer > * {
+    fill: $ui-green
+  }
+
+  .goodContainer > * {
+    fill: $ui-icon;
+  }
+
+  .badContainer > * {
+    fill: $ui-red;
+  }
+}
