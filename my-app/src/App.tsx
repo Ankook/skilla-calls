@@ -2,14 +2,14 @@ import React from 'react';
 import './App.scss';
 import { Route, Routes, BrowserRouter } from "react-router-dom";
 import { CallsPage } from './components/callsPage';
-import { NavMenu } from "./components/global/NavMenu/NavMenu";
+import { Sidebar } from "./components/global/Sidebar";
 
 function App() {
 
   return (
     <div className="app">
       <div className='navMenu'>
-          <NavMenu/>
+          <Sidebar/>
       </div>
       <div className='content'>
         
