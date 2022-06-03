@@ -1,5 +1,5 @@
 import React from 'react'; // we need this to make JSX compile
-
+import styles from "./Sidebar.module.scss";
 
 export interface SidebarPropsType {
   name?: string
@@ -7,7 +7,7 @@ export interface SidebarPropsType {
 
 const Sidebar: React.FC<SidebarPropsType> = () => {
   return (
-    <div className={styles.sidebar}>
+    <div className={styles.sidebarComponent}>
       Sidebar
     </div>
   )

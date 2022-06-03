@@ -4,8 +4,9 @@
   display: grid;
   grid-template-columns: 1fr 7fr;
   background: white;
-  .navMenu  {
+  .sidebar  {
     background: lightblue;
+    width: 240px;
   }
 
   .content  {
