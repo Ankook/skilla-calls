@@ -9,15 +9,13 @@ export interface ITypeOfCall {
 };
 
 const TypeOfCall: React.FC<ITypeOfCall> = ({ isIncoming, isPerfect }) => {
-  if (isIncoming == true) {
     return (
-      <IncomingCall className={isPerfect ? styles.incoming: styles.imperfect}/>
+      <div className={styles.typeOfCall}>
+        {isIncoming
+          ? <IncomingCall className={isPerfect ? styles.incoming : styles.imperfect} />
+          : <OutcomingCall className={isPerfect ? styles.outcoming : styles.imperfect} />}
+      </div>
       )
-  } else {
-    return (
-      <OutcomingCall className={isPerfect ? styles.outcoming : styles.imperfect}/>
-    )
-  }
   
 } 
 

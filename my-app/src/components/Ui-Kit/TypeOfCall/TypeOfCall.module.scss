@@ -1,15 +1,21 @@
 @import "src/styles/main";
 
-.incoming {
+.typeOfCall {
+  display: flex;
+  width: 24px;
+  height: 24px;
+  align-items: center;
+  justify-content: center;
+  .incoming {
+    fill: $ui-accent;
+  }
   
-
-}
-
-.outcoming  {
+  .outcoming  {
+    fill: $ui-green;
+  }
   
+  .imperfect  {
+    fill: $ui-red;
+  }
 }
 
-.imperfect  {
-  fill: $ui-red;
-  //stroke: red;
-}
