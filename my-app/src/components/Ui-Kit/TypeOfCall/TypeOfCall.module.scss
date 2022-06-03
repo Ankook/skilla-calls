@@ -1,4 +1,4 @@
-@import "src"
+@import "../../../../src/styles//main.scss";
 
 .incoming {
   stroke: red;
@@ -13,4 +13,5 @@
 
 .imperfect  {
   stroke: $green;
+  stroke: green;
 }
