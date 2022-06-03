@@ -1,5 +1,5 @@
 import React from 'react'; 
-import { EvaluationDots } from '../Ui-Kit/EvaluationDots';
+import { IsWeb } from '../Ui-Kit/IsWeb';
 
 export interface CallsPagePropsType {
 }
@@ -7,9 +7,8 @@ export interface CallsPagePropsType {
 const CallsPage: React.FC<CallsPagePropsType> = () => {
   return (
     <div>
-      <EvaluationDots evaluationStatus='excellent' />
-      <EvaluationDots evaluationStatus='good' />
-      <EvaluationDots evaluationStatus='bad'/>
+      <IsWeb isWeb={true} />
+      <IsWeb isWeb={false} />
     </div>
   )
 } 
