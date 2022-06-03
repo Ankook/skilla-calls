@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.scss';
 import { Route, Routes, BrowserRouter } from "react-router-dom";
-import { CallsPage } from './components/callsPage';
+import { CallsPage } from './components/pages/callsPage';
 import { Sidebar } from "./components/global/Sidebar";
 
 function App() {

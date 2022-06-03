@@ -1,5 +1,5 @@
 
-import { CallsPage } from "../components/callsPage";
+import { CallsPage } from "../components/pages/callsPage";
 import { ReactComponent as CallsIcon } from "../assets/Sidebar/calls.svg"
 import { ReactComponent as CounterpartiesIcon} from "../assets/Sidebar/counterparties.svg"
 import { ReactComponent as DocumentsIcon } from "../assets/Sidebar/documents.svg"
