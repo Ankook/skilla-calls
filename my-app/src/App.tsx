@@ -12,7 +12,7 @@ function App() {
           <Sidebar/>
       </div>
       <div className='content'>
-        
+
         <BrowserRouter>
         <Routes>
           <Route path="/" element={<CallsPage/>}/>

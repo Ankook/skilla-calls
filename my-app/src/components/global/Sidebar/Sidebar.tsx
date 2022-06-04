@@ -1,10 +1,7 @@
-
-
-
 import React from "react";
 import { Link } from "react-router-dom";
-import styles from "./Sidevar.module.scss";
-import Logo from "../../../assets/logo.svg";
+import styles from "./Sidebar.module.scss";
+import Logo from "../../../assets/Sidebar/logo.svg";
 import { ButtonRoute } from "./ButtonRoute";
 import { navigationRoutes } from "../../../services/routes";
 

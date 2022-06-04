@@ -90,6 +90,6 @@ export const navigationRoutes = [
   {
     path: RESULTS_PAGE,
     name: "Итоги",
-    img: <ResultsIcon>
+    img: <ResultsIcon/>
   }
 ]
