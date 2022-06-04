@@ -1,9 +1,9 @@
 import React from 'react';
 import './App.scss';
 import { Route, Routes} from "react-router-dom";
-import { CallsPage } from './components/pages/callsPage';
 import { Sidebar } from "./components/global/Sidebar";
 import { Header } from "./components/global/Header"; 
+import { routes } from './services/routes';
 
 function App() {
 
@@ -18,7 +18,9 @@ function App() {
         </div>
         <div className='content'>
           <Routes>
-            <Route path="/" element={<CallsPage/>}/>
+            {routes.map((e) => (
+              <Route path={e.path} key={e.path} element={e.component}/>
+            ))}
           </Routes>
         </div>
         

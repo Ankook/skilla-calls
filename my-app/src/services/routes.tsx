@@ -1,5 +1,6 @@
 
 import { CallsPage } from "../components/pages/callsPage";
+import { ResultsPage } from "../components/pages/resultsPage";
 import { ReactComponent as CallsIcon } from "../assets/Sidebar/calls.svg"
 import { ReactComponent as CounterpartiesIcon} from "../assets/Sidebar/counterparties.svg"
 import { ReactComponent as DocumentsIcon } from "../assets/Sidebar/documents.svg"
@@ -27,15 +28,17 @@ import {
 } from "./consts";
 
 
+
+
 export const routes = [
   {
     path: HOME_PAGE,
-    component: CallsPage,
+    component: <CallsPage/>,
     name: "Домашная страница",
   },
   {
     path: RESULTS_PAGE,
-    component: CallsPage,
+    component: <ResultsPage/>,
     name: "Итоги",
   },
 
