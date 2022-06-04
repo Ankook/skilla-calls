@@ -3,9 +3,8 @@
 .app {
   display: grid;
   grid-template-columns: 1fr 7fr;
-  background: red;;
+  background: blue;
   .sidebar  {
-    background: yellow;
     width: 240px;
   }
 
