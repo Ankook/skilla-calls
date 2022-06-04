@@ -9,9 +9,14 @@ export interface ISidebarProps {
 const Sidebar: React.FC<ISidebarProps> = ({  }) => {
   return (
     <div className={styles.sidebar}>
-      Sidebar
-      <ButtonRoute name="Aboba" img="Some Icon" path="/calls" />
-      
+      { navigationRoutes.map((item, index) => (
+          <ButtonRoute
+            name={item.name}
+            img={item.img}
+            key={index}
+            path={item.path}
+            />
+        ))}
     </div>
       )
 }

@@ -91,5 +91,50 @@ export const navigationRoutes = [
     path: RESULTS_PAGE,
     name: "Итоги",
     img: <ResultsIcon/>
+  },
+  {
+    path: ORDERS_PAGE,
+    name: "Заказы",
+    img: <OrdersIcon/>
+  },
+  {
+    path: MESSAGES_PAGE,
+    name: "Cообщения",
+    img: <MessagesIcon/>
+  },
+  {
+    path: CALLS_PAGE,
+    name: "Звонки",
+    img: <CallsIcon/>
+  },
+  {
+    path: COUNTERPARTIES_PAGE,
+    name: "Контрагенты",
+    img: <CounterpartiesIcon/>
+  },
+  {
+    path: DOCUMENTS_PAGE,
+    name: "Документы",
+    img: <DocumentsIcon/>
+  },
+  {
+    path: PERFORMERS_PAGE,
+    name: "Исполнители",
+    img: <PerfomersIcon/>
+  },
+  {
+    path: REPORTS_PAGE,
+    name: "Отчёты",
+    img: <ReportsIcon/>
+  },
+  {
+    path: KNOWLEDGE_BASE_PAGE,
+    name: "База знаний",
+    img: <KnowledgeBaseIcon/>
+  },
+  {
+    path: SETTINGS_PAGE,
+    name: "Итоги",
+    img: <SettingsIcon/>
   }
 ]

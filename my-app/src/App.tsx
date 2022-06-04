@@ -3,7 +3,6 @@ import './App.scss';
 import { Route, Routes} from "react-router-dom";
 import { CallsPage } from './components/pages/callsPage';
 import { Sidebar } from "./components/global/Sidebar";
-import {}
 
 function App() {
 

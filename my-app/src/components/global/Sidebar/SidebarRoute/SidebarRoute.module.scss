@@ -1,5 +1,4 @@
 .button {
-  font-family: "Poppins", sans-serif;
   cursor: pointer;
   text-align: left;
   font-size: 14px;
@@ -22,15 +21,16 @@
 }
 .activeButton {
   color: #fff;
-  background-color: #ff4500;
   svg {
     fill: #f0f0f0;
   }
 }
 .img {
-  width: 20px;
-  height: 20px;
-  padding: 10px 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
   fill: #fff;
   stroke: #fff;
 }
