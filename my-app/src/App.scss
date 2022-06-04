@@ -2,8 +2,9 @@
 
 .app {
   display: grid;
-  grid-template-columns: 1fr 7fr;
+  grid-template-columns: 240px 1fr;
   background: blue;
+  height: 2730px;
   .sidebar  {
     background: #091336;
     width: 240px;
@@ -12,7 +13,7 @@
 
   .content  {
     display: grid;
-    grid-template-rows: 1fr 41.65625fr;
+    grid-template-rows: 64px 1fr;
   }
 }
 

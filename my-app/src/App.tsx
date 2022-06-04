@@ -3,6 +3,7 @@ import './App.scss';
 import { Route, Routes} from "react-router-dom";
 import { CallsPage } from './components/pages/callsPage';
 import { Sidebar } from "./components/global/Sidebar";
+import { Header } from "./components/global/Header"; 
 
 function App() {
 
@@ -13,11 +14,14 @@ function App() {
       </div>
       <div className='content'>
         <div className='header'>
-          
+          <Header/>
         </div>
-        <Routes>
-          <Route path="/" element={<CallsPage/>}/>
-        </Routes>
+        <div className='content'>
+          <Routes>
+            <Route path="/" element={<CallsPage/>}/>
+          </Routes>
+        </div>
+        
       </div>
       
     </div>
