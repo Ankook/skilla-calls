@@ -1,8 +1,9 @@
 import React from 'react';
 import './App.scss';
-import { Route, Routes, BrowserRouter } from "react-router-dom";
+import { Route, Routes} from "react-router-dom";
 import { CallsPage } from './components/pages/callsPage';
 import { Sidebar } from "./components/global/Sidebar";
+import {}
 
 function App() {
 
@@ -13,11 +14,9 @@ function App() {
       </div>
       <div className='content'>
 
-        <BrowserRouter>
         <Routes>
           <Route path="/" element={<CallsPage/>}/>
         </Routes>
-        </BrowserRouter>
       </div>
       
     </div>

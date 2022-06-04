@@ -5,7 +5,9 @@
   grid-template-columns: 1fr 7fr;
   background: blue;
   .sidebar  {
+    background: lawngreen;
     width: 240px;
+    height: 100%;
   }
 
   .content  {
