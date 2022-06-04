@@ -1,7 +1,9 @@
 import React from 'react';
 import styles from "./Sidebar.module.scss";
-import { ButtonRoute } from './SidebarRoute/SidebarRoute';
+import { SidebarRoute } from './SidebarRoute/SidebarRoute';
 import { navigationRoutes } from '../../../services/routes';
+import { Link } from "react-router-dom";
+import Logo from "../../../assets/Sidebar/logo.svg";
 
 export interface ISidebarProps {
 };
@@ -9,14 +11,23 @@ export interface ISidebarProps {
 const Sidebar: React.FC<ISidebarProps> = ({  }) => {
   return (
     <div className={styles.sidebar}>
-      { navigationRoutes.map((item, index) => (
-          <ButtonRoute
-            name={item.name}
-            img={item.img}
-            key={index}
-            path={item.path}
-            />
-        ))}
+      <div className={styles.logoWrapper}>
+        <Link className={styles.link} to={"/calls"}>
+          <img className={styles.logo} src={Logo} alt="logo" />
+        </Link>
+      </div>
+      <ul className={styles.navigationRoutes}>
+        {navigationRoutes.map((item, index) => (
+          <li>
+            <SidebarRoute
+              name={item.name}
+              img={item.img}
+              key={index}
+              path={item.path}
+              />
+          </li>
+      ))}
+      </ul>
     </div>
       )
 }

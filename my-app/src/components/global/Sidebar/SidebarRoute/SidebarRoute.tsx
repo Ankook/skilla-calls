@@ -1,30 +1,26 @@
 import React from "react";
 import styles from "./SidebarRoute.module.scss";
-import { Link, useNavigate, useParams } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import cx from "classnames";
 
-interface IButtonRouteProps {
+interface ISidebarRouteProps {
   name: string;
   img: any;
   path: string;
 }
-const ButtonRoute: React.FC<IButtonRouteProps> = ({ name, img, path }) => {
-  const navigate = useNavigate();
-  const params = useParams<any>();
+const SidebarRoute: React.FC<ISidebarRouteProps> = ({ name, img, path }) => {
  
+  const location = useLocation();
   
   return (
     <Link
-      className={cx(
-        styles.button,
-         styles.activeButton 
-      )}
+      className={cx(styles.SidebarRoute,location.pathname === path ? styles.activeButton : null)}
       to={path}
     >
-      {img}
-      <p>{name}</p>
+        <div className={styles.img}>{img}</div>
+        <p className={styles.text}>{name}</p>
     </Link>
   );
 };
 
-export { ButtonRoute };
+export { SidebarRoute };

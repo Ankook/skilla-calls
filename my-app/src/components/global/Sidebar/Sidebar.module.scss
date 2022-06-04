@@ -1,2 +1,25 @@
 .sidebar  {
+  position: relative;
+}
+
+.logoWrapper  {
+  position: relative;
+  height: 80px;
+  width: 100%;
+}
+.link  {
+  display: block;
+  padding: 20px 12px;
+  box-sizing: border-box;
+}
+
+.logo {
+
+}
+
+.navigationRoutes {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
 }
