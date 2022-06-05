@@ -26,6 +26,14 @@ import {
   SETTINGS_PAGE,
   KNOWLEDGE_BASE_PAGE
 } from "./consts";
+import { OrdersPage } from "../components/pages/ordersPage";
+import { DocumentsPage } from "../components/pages/documentsPage";
+import { MessagesPage } from "../components/pages/messagesPage";
+import { CounterpartiesPage } from "../components/pages/counterpartiesPage";
+import { PerformersPage } from "../components/pages/performersPage";
+import { ReportsPage } from "../components/pages/reportsPage";
+import { KnowledgeBasePage } from "../components/pages/knowledgeBasePage";
+import { SettingsPage } from "../components/pages/settingsPage";
 
 
 
@@ -33,59 +41,59 @@ import {
 export const routes = [
   {
     path: HOME_PAGE,
-    component: <CallsPage/>,
+    element: <CallsPage/>,
     name: "Домашная страница",
   },
   {
     path: RESULTS_PAGE,
-    component: <ResultsPage/>,
+    element: <ResultsPage/>,
     name: "Итоги",
   },
 
   {
     path: ORDERS_PAGE,
-    component: CallsPage,
+    element: <OrdersPage/>,
     name: "Заказы",
   },
   {
     path: DOCUMENTS_PAGE,
-    component: CallsPage,
+    element: <DocumentsPage/>,
     name: "Документы",
   },
   {
     path: MESSAGES_PAGE,
-    component: CallsPage,
+    element: <MessagesPage/>,
     name: "Сообщения",
   },
   {
     path: COUNTERPARTIES_PAGE,
-    component: CallsPage,
+    element: <CounterpartiesPage/>,
     name: "Контрагенты",
   },
   {
     path: PERFORMERS_PAGE,
-    component: CallsPage,
+    element: <PerformersPage/>,
     name: "Исполнители",
   },
   {
     path: CALLS_PAGE,
-    component: CallsPage,
+    element: <CallsPage/>,
     name: "Звонки",
   },
   {
     path: REPORTS_PAGE,
-    component: CallsPage,
+    element: <ReportsPage/>,
     name: "Отчёты",
   },
   {
     path: KNOWLEDGE_BASE_PAGE,
-    component: CallsPage,
+    element: <KnowledgeBasePage/>,
     name: "База знаний",
   },
   {
     path: SETTINGS_PAGE,
-    component: CallsPage,
-    name: "Настройки",
+    element: <SettingsPage/>,
+    name: "Настройки"
   },
 ];
 
