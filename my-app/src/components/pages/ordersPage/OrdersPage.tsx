@@ -1,11 +1,9 @@
 import React from 'react'; 
-import { CallEvaluationTextStatus } from '../../Ui-Kit/CallEvaluationTextStatus';
-import { IsWeb } from '../../Ui-Kit/IsWeb';
 
-export interface CallsPagePropsType {
+export interface OrdersPagePropsType {
 }
 
-const OrdersPage: React.FC<CallsPagePropsType> = () => {
+const OrdersPage: React.FC<OrdersPagePropsType> = () => {
   return (
     <div>
       Orders Page

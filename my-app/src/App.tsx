@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.scss';
-import { Route, Routes, useRoutes } from "react-router-dom";
+import { useRoutes } from "react-router-dom";
 import { Sidebar } from "./components/global/Sidebar";
 import { Header } from "./components/global/Header"; 
 import { routes } from './services/routes';

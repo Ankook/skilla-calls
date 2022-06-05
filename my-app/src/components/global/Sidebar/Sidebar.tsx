@@ -8,7 +8,7 @@ import Logo from "../../../assets/Sidebar/logo.svg";
 export interface ISidebarProps {
 };
 
-const Sidebar: React.FC<ISidebarProps> = ({  }) => {
+const Sidebar: React.FC<ISidebarProps> = () => {
   return (
     <div className={styles.sidebar}>
       <div className={styles.logoWrapper}>

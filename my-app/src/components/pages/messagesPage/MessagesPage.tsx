@@ -1,11 +1,9 @@
 import React from 'react'; 
-import { CallEvaluationTextStatus } from '../../Ui-Kit/CallEvaluationTextStatus';
-import { IsWeb } from '../../Ui-Kit/IsWeb';
 
-export interface CallsPagePropsType {
+export interface MessagesPagePropsType {
 }
 
-const MessagesPage: React.FC<CallsPagePropsType> = () => {
+const MessagesPage: React.FC<MessagesPagePropsType> = () => {
   return (
     <div>
       Messages Page

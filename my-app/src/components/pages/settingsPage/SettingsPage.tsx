@@ -1,11 +1,9 @@
 import React from 'react'; 
-import { CallEvaluationTextStatus } from '../../Ui-Kit/CallEvaluationTextStatus';
-import { IsWeb } from '../../Ui-Kit/IsWeb';
 
-export interface CallsPagePropsType {
+export interface SettingsPagePropsType {
 }
 
-const SettingsPage: React.FC<CallsPagePropsType> = () => {
+const SettingsPage: React.FC<SettingsPagePropsType> = () => {
   return (
     <div>
       SettingsPage

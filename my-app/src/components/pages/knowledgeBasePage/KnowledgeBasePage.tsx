@@ -1,11 +1,10 @@
 import React from 'react'; 
-import { CallEvaluationTextStatus } from '../../Ui-Kit/CallEvaluationTextStatus';
-import { IsWeb } from '../../Ui-Kit/IsWeb';
 
-export interface CallsPagePropsType {
+
+export interface KnowledgeBasePagePropsType {
 }
 
-const KnowledgeBasePage: React.FC<CallsPagePropsType> = () => {
+const KnowledgeBasePage: React.FC<KnowledgeBasePagePropsType> = () => {
   return (
     <div>
       KnowledgeBase Page
