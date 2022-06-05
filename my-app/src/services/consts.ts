@@ -9,4 +9,5 @@ export const PERFORMERS_PAGE = "/performers";
 export const REPORTS_PAGE = "/reports";
 export const KNOWLEDGE_BASE_PAGE = "/knowledge_base";
 export const SETTINGS_PAGE = "/settings";
+export const COUNTER_PAGE = "/counter";
 

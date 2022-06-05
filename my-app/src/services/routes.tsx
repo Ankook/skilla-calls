@@ -24,7 +24,8 @@ import {
   CALLS_PAGE,
   REPORTS_PAGE,
   SETTINGS_PAGE,
-  KNOWLEDGE_BASE_PAGE
+  KNOWLEDGE_BASE_PAGE,
+  COUNTER_PAGE
 } from "./consts";
 import { OrdersPage } from "../components/pages/ordersPage";
 import { DocumentsPage } from "../components/pages/documentsPage";
@@ -34,7 +35,7 @@ import { PerformersPage } from "../components/pages/performersPage";
 import { ReportsPage } from "../components/pages/reportsPage";
 import { KnowledgeBasePage } from "../components/pages/knowledgeBasePage";
 import { SettingsPage } from "../components/pages/settingsPage";
-
+import { Counter } from "../components/pages/counterPage";
 
 
 
@@ -95,6 +96,11 @@ export const routes = [
     element: <SettingsPage/>,
     name: "Настройки"
   },
+  {
+    path: COUNTER_PAGE,
+    element: <Counter />,
+    name: "Cчётчик"
+  }
 ];
 
 export const navigationRoutes = [
@@ -146,6 +152,11 @@ export const navigationRoutes = [
   {
     path: SETTINGS_PAGE,
     name: "Итоги",
+    img: <SettingsIcon/>
+  },
+  {
+    path: COUNTER_PAGE,
+    name: "Cчётчик",
     img: <SettingsIcon/>
   }
 ]
