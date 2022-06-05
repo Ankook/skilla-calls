@@ -4,15 +4,15 @@ import { Skilla } from "./types";
 
 // Define a service using a base URL and expected endpoints
 export const skillaApi = createApi({
-  reducerPath: 'pokemonApi',
-  baseQuery: fetchBaseQuery({ baseUrl: 'https://pokeapi.co/api/v2/' }),
+  reducerPath: 'skillaApi',
+  baseQuery: fetchBaseQuery({ baseUrl: 'https://api.skilla.ru/' }),
   endpoints: (builder) => ({
-    getPokemonByName: builder.query<Pokemon, string>({ //<ResulType, queryArg or queryFn>
-      query: (name) => `pokemon/${name}`,
+    getList: builder.query<ListOfCalls, string>({ //<ResulType, queryArg or queryFn>
+      query: ({date_start, date_end, in_out}) => `mango/getList?`,
     }),
   }),
 })
 
 // Export hooks for usage in functional components, which are
 // auto-generated based on the defined endpoints
-export const { useGetPokemonByNameQuery } = pokemonApi
+export const { useGetListQuery } = skillaApi;
