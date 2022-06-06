@@ -4,17 +4,13 @@ export interface ListOfCalls {
 }
 
 
-
-
-declare module namespace {
-
   export interface PartnerData {
       id: string;
       name: string;
       phone: string;
   }
 
-  export interface Answer {
+  export interface IAnswer {
       message: string;
       from_support: number;
       support_read_status: number;
@@ -27,12 +23,26 @@ declare module namespace {
       message: string;
       support_read_status: number;
       support_answer_status: number;
-      answers: Answer[];
+      answers: IAnswer[];
   }
 
   export interface IError {
     title: string
   }
+
+  export interface IResult  {
+    type: string,
+    title: string,
+    tooltip: string
+  }
+
+export interface IStage {
+		"person_name": string,
+		"person_surname": string,
+		"person_mango_phone": string,
+		"duration": string,
+		"disconnect_reason": string
+}
 
   export interface ICall {
       id: number;
@@ -55,7 +65,7 @@ declare module namespace {
       errors: Array<IError>;
       disconnect_reason: string;
       results: Array<IResult>;
-      stages: any[];
+      stages: Array<IStage>;
       abuse: IAbuse;
       contact_name: string;
       contact_company: string;
@@ -65,5 +75,5 @@ declare module namespace {
       person_avatar: string;
   }
 
-}
+
 
