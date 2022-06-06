@@ -1,3 +1,5 @@
+import { DateYMDString } from "../../globalTypes";
+
 export interface IGetListDto  {
   date_start: string,
   date_end: string,
@@ -55,7 +57,7 @@ export interface IStage {
       partnership_id: string;
       partner_data: PartnerData;
       date: Date;
-      date_notime: Date;
+      date_notime: DateYMDString;
       time: number;
       from_number: string;
       from_extension: string;

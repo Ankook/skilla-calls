@@ -6,7 +6,8 @@ export interface CallsPagePropsType {
 }
 
 const CallsPage: React.FC<CallsPagePropsType> = () => {
-  const { data, error, isLoading } = useGetListQuery({date_start: "2022-05-03"});
+  const { data, error, isLoading } = useGetListQuery({ date_start: "2022-05-03", date_end: "2022-06-01", in_out: 1 });
+  console.log(data);
   return (
     <div>
       <CallEvaluationTextStatus evaluationStatus={"excellent" } />

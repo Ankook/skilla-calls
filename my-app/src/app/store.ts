@@ -13,7 +13,7 @@ export const store = configureStore({
     [skillaApi.reducerPath]: skillaApi.reducer,
   },
   middleware: (getDefaultMiddleware) =>
-    getDefaultMiddleware().concat(pokemonApi.middleware),
+    getDefaultMiddleware().concat(skillaApi.middleware),
 })
 
 // Infer the `RootState` and `AppDispatch` types from the store itself
