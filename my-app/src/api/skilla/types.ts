@@ -1,3 +1,9 @@
+export interface IGetListDto  {
+  date_start: string,
+  date_end: string,
+  in_out: number
+}
+
 export interface ListOfCalls {
   totalRows: string,
   result: Array<ICall>,
