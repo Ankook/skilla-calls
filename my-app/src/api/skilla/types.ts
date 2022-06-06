@@ -4,6 +4,66 @@ export interface ListOfCalls {
 }
 
 
-export interface ICall  {
-  
+
+
+declare module namespace {
+
+  export interface PartnerData {
+      id: string;
+      name: string;
+      phone: string;
+  }
+
+  export interface Answer {
+      message: string;
+      from_support: number;
+      support_read_status: number;
+      person_read_status: number;
+  }
+
+  export interface IAbuse {
+      date: string;
+      person_name: string;
+      message: string;
+      support_read_status: number;
+      support_answer_status: number;
+      answers: Answer[];
+  }
+
+  export interface IError {
+    title: string
+  }
+
+  export interface ICall {
+      id: number;
+      partnership_id: string;
+      partner_data: PartnerData;
+      date: Date;
+      date_notime: Date;
+      time: number;
+      from_number: string;
+      from_extension: string;
+      to_number: string;
+      to_extension: string;
+      is_skilla: number;
+      status: string;
+      record: string;
+      line_number: string;
+      in_out: number;
+      from_site: number;
+      source: string;
+      errors: Array<IError>;
+      disconnect_reason: string;
+      results: Array<IResult>;
+      stages: any[];
+      abuse: IAbuse;
+      contact_name: string;
+      contact_company: string;
+      person_id: number;
+      person_name: string;
+      person_surname: string;
+      person_avatar: string;
+  }
+
 }
+
