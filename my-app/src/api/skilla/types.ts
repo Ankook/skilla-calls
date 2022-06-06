@@ -1,5 +1,15 @@
 import { DateYMDString } from "../../globalTypes";
 
+
+export interface IGetRecordDto  {
+  record: string;
+  partnership_id: string;
+}
+
+export interface RecordType {
+
+}
+
 export interface IGetListDto  {
   date_start: string,
   date_end: string,

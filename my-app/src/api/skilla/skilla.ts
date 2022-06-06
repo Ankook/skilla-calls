@@ -1,6 +1,6 @@
 // Need to use the React-specific entry point to import createApi
 import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react' //создаем api, 
-import { IGetListDto, ListOfCalls } from "./types";
+import { IGetListDto,IGetRecordDto, ListOfCalls, RecordType } from "./types";
 
 // Define a service using a base URL and expected endpoints
 export const skillaApi = createApi({
@@ -25,9 +25,15 @@ export const skillaApi = createApi({
         method: 'POST'
       }),
     }),
+    getRecord: builder.query<RecordType, IGetRecordDto>({ //<ResulType,  queryFn(queryDto)>
+      query: ({ record, partnership_id }) => ({
+        url: `mango/getRecord?record=${record}&partnership_id=${partnership_id}`,
+        method: 'POST'
+      }),
+    }),
   }),
 })
 
 // Export hooks for usage in functional components, which are
 // auto-generated based on the defined endpoints
-export const { useGetListQuery } = skillaApi;
+export const { useGetListQuery, useGetRecordQuery } = skillaApi;
