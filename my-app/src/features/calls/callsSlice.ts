@@ -1,23 +1,26 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit';
+import { getListOfCalls } from '../../api/calls';
 
 
 
 export const fetchGetListOfCalls = createAsyncThunk(
-  "user/registration",
+  "calls/getListOfCalls",
   (dto: any) => {
-      return register(dto);
+      return getListOfCalls(dto);
   }
 );
 
 
 
-export interface initi {
-  value: number
-}
+const initialState = {
+  value: null as number | null,
+  calls: [] as Array<ICall>,
+  isLoad: false as boolean,  
+};
 
-const initialState: CallsSlice = {
-  value: 0,
-}
+export type initialStateType = typeof initialState
+
+
 
 export const callsSlice = createSlice({
   name: 'calls',
@@ -25,18 +28,12 @@ export const callsSlice = createSlice({
   reducers: {},
   extraReducers: {
     [fetchGetListOfCalls.pending.type]: (state: initialStateType) => {
-      state.isLoad = true;
     },
     [fetchGetListOfCalls.fulfilled.type]: (state: initialStateType, action) => {
-      state.isLoad = false;
-      state.error = {};
-      let { id, login, telegramId, role } = action.payload;
-      [state.userId, state.login, state.telegramId, state.role, state.isAuth] = [id, login, telegramId, role, true];
+      
     },
     [fetchGetListOfCalls.rejected.type]: (state: initialStateType, action) => {
-      state.isLoad = false;
-      state.error = action.error;
-    },
+      
   }
 })
 
