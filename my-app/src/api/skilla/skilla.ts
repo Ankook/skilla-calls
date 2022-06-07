@@ -22,7 +22,8 @@ export const skillaApi = createApi({
     getList: builder.query<ListOfCalls, IGetListDto>({ //<ResulType,  queryFn(queryDto)>
       query: ({ date_start, date_end, in_out }) => ({
         url: `mango/getList?date_start=${date_start}&date_end=${date_end}&in_out=${in_out}`,
-        method: 'POST'
+        method: 'POST',
+        body
       }),
     }),
     getRecord: builder.query<RecordType, IGetRecordDto>({ //<ResulType,  queryFn(queryDto)>
