@@ -28,7 +28,12 @@ export const skillaApi = createApi({
     getRecord: builder.query<RecordType, IGetRecordDto>({ //<ResulType,  queryFn(queryDto)>
       query: ({ record, partnership_id }) => ({
         url: `mango/getRecord?record=${record}&partnership_id=${partnership_id}`,
-        method: 'POST'
+        method: 'POST',
+        headers: {
+          "content-type": "audio/mpeg, audio/x-mpeg, audio/x-mpeg-3, audio/mpeg3",
+          "content-transfer-encoding": "binary",
+          "content-disposition": __filename="record.mp3"
+        },
       }),
     }),
   }),
