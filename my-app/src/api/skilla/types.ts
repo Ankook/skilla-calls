@@ -13,7 +13,15 @@ export interface RecordType {
 export interface IGetListDto  {
   date_start: string,
   date_end: string,
-  in_out: number
+  in_out: number | '',
+  sort_by?: "date" | "duration"
+  limit?: number
+  order?: "ASC" | "DESC"
+  status?: "success" | "fail"
+  from_type?: Array<"clients" | "new_clients" | "workers" | "app">
+  from_persons?: Array<number>
+  sources?: Array<"from_site" | "yandex" | "google" | "empty">
+
 }
 
 export interface ListOfCalls {
