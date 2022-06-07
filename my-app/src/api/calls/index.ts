@@ -7,7 +7,7 @@ export const login = async (dto: any) => {
     return response.data;
 }
 
-export const getList = async (dto: IGetList) => {
+export const getListOfCalls = async (dto: IGetList) => {
   const response = await $api.post('/getList', dto);
   return response.data;
 }
